@@ -1,319 +1,475 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>dpawar | dev</title>
-<meta name="description" content="Portfolio of Darshan Pawar, BCA student. Web apps with Flask and Supabase, data and AI projects with Python, and an AI and deep learning internship at iBase Electrosoft.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="dpawar | dev">
-<meta property="og:description" content="Web apps with Flask and Supabase, data and AI projects with Python, and an AI and deep learning internship.">
-<meta name="theme-color" content="#12070a">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23fff1e8'/%3E%3Ctext x='32' y='42' font-size='28' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='%237a0c12'%3EDP%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>dpawar | dev</title>
+  <meta name="description"
+    content="Portfolio of Darshan Pawar, BCA student. Web apps with Flask and Supabase, data and AI projects with Python, and an AI and deep learning internship at iBase Electrosoft.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="dpawar | dev">
+  <meta property="og:description"
+    content="Web apps with Flask and Supabase, data and AI projects with Python, and an AI and deep learning internship.">
+  <meta name="theme-color" content="#12070a">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23fff1e8'/%3E%3Ctext x='32' y='42' font-size='28' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='%237a0c12'%3EDP%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div class="progress" id="bar"></div>
-<div class="live" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i><i class="glow" id="glow"></i></div>
+  <div class="progress" id="bar"></div>
+  <div class="live" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i><i class="glow"
+      id="glow"></i></div>
 
-<div class="top">
-  <a class="mark" href="#top" aria-label="Top">DP</a>
-  <nav class="pills" aria-label="Main">
-    <a href="#about">About</a><a href="#work">Work</a><a href="#journey">Journey</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
-  </nav>
-  <a class="hire" href="mailto:Darshanpawar2417@gmail.com">Hire me</a>
-</div>
-
-<header class="hero" id="top">
-  <div class="copy">
-    <button class="badge" id="workBtn" type="button" aria-haspopup="dialog">Open to work</button>
-    <h2>I build<br><span class="rot" id="rot">web apps</span></h2>
-    <p>BCA student who turns ideas into live products. From a notes platform for degree students to a tool that forecasts sales from any CSV, I build with Python, Flask and Streamlit and put every project online.</p>
+  <div class="top">
+    <a class="mark" href="#top" aria-label="Top">DP</a>
+    <nav class="pills" aria-label="Main">
+      <a href="#about">About</a><a href="#work">Work</a><a href="#journey">Journey</a><a href="#skills">Skills</a><a
+        href="#contact">Contact</a>
+    </nav>
+    <a class="hire" href="mailto:Darshanpawar2417@gmail.com">Hire me</a>
   </div>
 
-  <div class="btns cta"><a class="btn p" href="#work">See my work</a><a class="btn g" href="#contact">Get in touch</a><a class="btn g" href="resume.pdf" target="_blank" rel="noopener">Resume</a></div>
-
-  <svg class="art" id="art" viewBox="0 30 640 550" role="img" aria-label="Illustration of a code editor, a sales forecast chart and a neural network, the kind of projects Darshan builds">
-    <defs>
-      <radialGradient id="orb" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ffb184" stop-opacity=".75"/><stop offset=".55" stop-color="#ff7a45" stop-opacity=".28"/><stop offset="1" stop-color="#e8392e" stop-opacity="0"/></radialGradient>
-      <linearGradient id="win" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a1822"/><stop offset="1" stop-color="#1a0a0f"/></linearGradient>
-      <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4a2230" stop-opacity=".92"/><stop offset="1" stop-color="#241017" stop-opacity=".92"/></linearGradient>
-      <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffcfb4"/><stop offset="1" stop-color="#c4503a"/></linearGradient>
-      <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffcfb4"/><stop offset="1" stop-color="#ff7a45"/></linearGradient>
-    </defs>
-
-    <circle cx="320" cy="300" r="250" fill="url(#orb)"/>
-    <circle cx="320" cy="300" r="170" fill="none" stroke="#ffcfb4" stroke-opacity=".16"/>
-    <circle cx="320" cy="300" r="225" fill="none" stroke="#ffcfb4" stroke-opacity=".12" stroke-dasharray="3 9" stroke-linecap="round"/>
-
-    <!-- code editor -->
-    <g transform="translate(0,50)">
-      <rect x="105" y="150" width="430" height="420" rx="26" fill="url(#win)" stroke="#ffb184" stroke-opacity=".4" stroke-width="1.5"/>
-      <path d="M105 214h430" stroke="#ffcfb4" stroke-opacity=".14"/>
-      <circle cx="135" cy="182" r="6" fill="#ff7a45"/><circle cx="155" cy="182" r="6" fill="#ffcfb4" opacity=".5"/><circle cx="175" cy="182" r="6" fill="#ffcfb4" opacity=".25"/>
-      <rect x="360" y="170" width="150" height="24" rx="12" fill="#ffcfb4" fill-opacity=".1"/>
-      <circle cx="378" cy="182" r="4" fill="#ff7a45"/>
-      <text x="390" y="187" font-family="Sora,system-ui,sans-serif" font-size="12" fill="#ffcfb4">app.py &#183; live</text>
-
-      <g font-family="Sora,system-ui,sans-serif" font-size="11" fill="#ffcfb4" fill-opacity=".35">
-        <text x="127" y="249">1</text><text x="127" y="279">2</text><text x="127" y="309">3</text><text x="127" y="339">4</text><text x="127" y="369">5</text><text x="127" y="399">6</text><text x="127" y="429">7</text><text x="127" y="459">8</text><text x="127" y="489">9</text>
-      </g>
-      <g stroke-linecap="round" stroke-width="9" fill="none">
-        <path d="M155 245h46" stroke="#ff7a45"/><path d="M211 245h92" stroke="#ffcfb4" stroke-opacity=".8"/>
-        <path d="M155 275h34" stroke="#ff7a45"/><path d="M199 275h58" stroke="#ffcfb4" stroke-opacity=".55"/><path d="M267 275h70" stroke="#e8392e"/>
-        <path d="M185 305h118" stroke="#ffcfb4" stroke-opacity=".55"/><path d="M313 305h46" stroke="#ff7a45"/>
-        <path d="M185 335h60" stroke="#e8392e"/><path d="M255 335h96" stroke="#ffcfb4" stroke-opacity=".8"/>
-        <path d="M155 365h30" stroke="#ff7a45"/><path d="M195 365h130" stroke="#ffcfb4" stroke-opacity=".4"/>
-        <path d="M185 395h86" stroke="#ffcfb4" stroke-opacity=".8"/><path d="M281 395h54" stroke="#ff7a45"/><path d="M345 395h60" stroke="#ffcfb4" stroke-opacity=".4"/>
-        <path d="M185 425h140" stroke="#ffcfb4" stroke-opacity=".5"/>
-        <path d="M155 455h52" stroke="#e8392e"/><path d="M217 455h90" stroke="#ffcfb4" stroke-opacity=".8"/>
-        <path d="M185 485h72" stroke="#ff7a45"/>
-      </g>
-      <rect class="cur" x="268" y="476" width="4" height="20" rx="2" fill="#fff1e8"/>
-    </g>
-
-    <!-- forecast chart card -->
-    <g class="fl a">
-      <rect x="418" y="62" width="196" height="148" rx="22" fill="url(#glass)" stroke="#ffcfb4" stroke-opacity=".28"/>
-      <text x="438" y="90" font-family="Sora,system-ui,sans-serif" font-size="12" fill="#ffcfb4" fill-opacity=".8">Sales forecast</text>
-      <g fill="url(#bar)">
-        <rect x="438" y="150" width="14" height="38" rx="3"/><rect x="460" y="138" width="14" height="50" rx="3"/><rect x="482" y="144" width="14" height="44" rx="3"/><rect x="504" y="124" width="14" height="64" rx="3"/>
-      </g>
-      <g fill="#ff7a45" fill-opacity=".85">
-        <rect x="526" y="112" width="14" height="76" rx="3"/><rect x="548" y="100" width="14" height="88" rx="3"/><rect x="570" y="108" width="14" height="80" rx="3" opacity=".6"/>
-      </g>
-      <path d="M445 140L467 128 489 134 511 114 533 102 555 92 577 84" fill="none" stroke="url(#line)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 0"/>
-      <circle cx="577" cy="84" r="5" fill="#fff1e8"/>
-    </g>
-
-    <!-- neural network card -->
-    <g class="fl b">
-     <g transform="translate(-8,-36)">
-      <rect x="22" y="92" width="170" height="148" rx="22" fill="url(#glass)" stroke="#ffcfb4" stroke-opacity=".28"/>
-      <g stroke="#ffcfb4" stroke-opacity=".3" stroke-width="1.2">
-        <path d="M52 128L106 118M52 128L106 158M52 128L106 198M52 170L106 118M52 170L106 158M52 170L106 198M52 212L106 118M52 212L106 158M52 212L106 198"/>
-        <path d="M106 118L160 150M106 118L160 190M106 158L160 150M106 158L160 190M106 198L160 150M106 198L160 190"/>
-      </g>
-      <g fill="#ffcfb4"><circle cx="52" cy="128" r="7"/><circle cx="52" cy="170" r="7"/><circle cx="52" cy="212" r="7"/></g>
-      <g fill="#ff7a45"><circle cx="106" cy="118" r="8"/><circle cx="106" cy="158" r="8"/><circle cx="106" cy="198" r="8"/></g>
-      <g fill="#fff1e8"><circle cx="160" cy="150" r="9"/><circle cx="160" cy="190" r="9"/></g>
-     </g>
-    </g>
-
-    <!-- floating chips -->
-    <g class="fl c" font-family="Sora,system-ui,sans-serif" font-size="13" font-weight="600">
-      <rect x="520" y="246" width="104" height="36" rx="18" fill="#fff1e8"/><text x="572" y="269" text-anchor="middle" fill="#7a0c12">Flask</text>
-    </g>
-    <g class="fl a" font-family="Sora,system-ui,sans-serif" font-size="13" font-weight="600">
-      <rect x="24" y="262" width="112" height="36" rx="18" fill="#ff7a45"/><text x="80" y="285" text-anchor="middle" fill="#2a0a10">Python</text>
-    </g>
-  </svg>
-
-  <h1 class="name"><span>Darshan</span><span>Pawar</span></h1>
-</header>
-
-<section id="about">
-  <div class="wrap">
-    <h3 class="big rv">I make ideas into things people can <b>open and use.</b></h3>
-    <p class="lede rv">I like projects that solve a real problem. StudyShelf helps degree students find notes in one place, and my forecasting dashboard turns plain sales files into charts and predictions. At iBase Electrosoft I went deeper into AI and deep learning during my internship. I build, deploy, and keep improving.</p>
-    <div class="stats">
-      <div class="stat rv"><span class="num" data-to="2">0</span><span>Projects built and shared</span></div>
-      <div class="stat rv"><span class="num" data-to="1">0</span><span>Internship completed</span></div>
-      <div class="stat rv"><span class="num" data-to="15" data-suf="+">0</span><span>Tools and technologies</span></div>
+  <header class="hero" id="top">
+    <div class="copy">
+      <button class="badge" id="workBtn" type="button" aria-haspopup="dialog">Open to work</button>
+      <h2>I build<br><span class="rot" id="rot">web apps</span></h2>
+      <p>BCA student who turns ideas into live products. From a notes platform for degree students to a tool that
+        forecasts sales from any CSV, I build with Python, Flask and Streamlit and put every project online.</p>
     </div>
-  </div>
-</section>
 
-<section id="work">
-  <div class="wrap">
-    <h3 class="big rv">Selected <b>work</b></h3>
-    <p class="lede rv">One full web app with a database and admin login, and one data app that forecasts sales from any CSV.</p>
-    <div class="projects">
+    <div class="btns cta"><a class="btn p" href="#work">See my work</a><a class="btn g" href="#contact">Get in
+        touch</a><a class="btn g" href="resume.pdf" target="_blank" rel="noopener">Resume</a></div>
 
-      <article class="card rv">
-        <div class="shot"><div class="win"><div class="dots"><i></i><i></i><i></i></div>
-          <a class="frame" href="https://study-shelf-gamma.vercel.app" target="_blank" rel="noopener" aria-label="Open the StudyShelf website">
-            <div class="mock" aria-hidden="true">
-              <div class="tb"><b class="a"></b><b></b></div>
-              <div class="bn"><b class="a" style="width:46%"></b><b style="width:30%;background:#8c3a44"></b><b style="width:68%"></b></div>
-              <b style="width:42%"></b>
-              <div class="row2"><u></u><u></u></div>
+    <svg class="art" id="art" viewBox="0 30 640 550" role="img"
+      aria-label="Illustration of a code editor, a sales forecast chart and a neural network, the kind of projects Darshan builds">
+      <defs>
+        <radialGradient id="orb" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#ffb184" stop-opacity=".75" />
+          <stop offset=".55" stop-color="#ff7a45" stop-opacity=".28" />
+          <stop offset="1" stop-color="#e8392e" stop-opacity="0" />
+        </radialGradient>
+        <linearGradient id="win" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#3a1822" />
+          <stop offset="1" stop-color="#1a0a0f" />
+        </linearGradient>
+        <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#4a2230" stop-opacity=".92" />
+          <stop offset="1" stop-color="#241017" stop-opacity=".92" />
+        </linearGradient>
+        <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#ffcfb4" />
+          <stop offset="1" stop-color="#c4503a" />
+        </linearGradient>
+        <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#ffcfb4" />
+          <stop offset="1" stop-color="#ff7a45" />
+        </linearGradient>
+      </defs>
+
+      <circle cx="320" cy="300" r="250" fill="url(#orb)" />
+      <circle cx="320" cy="300" r="170" fill="none" stroke="#ffcfb4" stroke-opacity=".16" />
+      <circle cx="320" cy="300" r="225" fill="none" stroke="#ffcfb4" stroke-opacity=".12" stroke-dasharray="3 9"
+        stroke-linecap="round" />
+
+      <!-- code editor -->
+      <g transform="translate(0,50)">
+        <rect x="105" y="150" width="430" height="420" rx="26" fill="url(#win)" stroke="#ffb184" stroke-opacity=".4"
+          stroke-width="1.5" />
+        <path d="M105 214h430" stroke="#ffcfb4" stroke-opacity=".14" />
+        <circle cx="135" cy="182" r="6" fill="#ff7a45" />
+        <circle cx="155" cy="182" r="6" fill="#ffcfb4" opacity=".5" />
+        <circle cx="175" cy="182" r="6" fill="#ffcfb4" opacity=".25" />
+        <rect x="360" y="170" width="150" height="24" rx="12" fill="#ffcfb4" fill-opacity=".1" />
+        <circle cx="378" cy="182" r="4" fill="#ff7a45" />
+        <text x="390" y="187" font-family="Sora,system-ui,sans-serif" font-size="12" fill="#ffcfb4">app.py &#183;
+          live</text>
+
+        <g font-family="Sora,system-ui,sans-serif" font-size="11" fill="#ffcfb4" fill-opacity=".35">
+          <text x="127" y="249">1</text><text x="127" y="279">2</text><text x="127" y="309">3</text><text x="127"
+            y="339">4</text><text x="127" y="369">5</text><text x="127" y="399">6</text><text x="127"
+            y="429">7</text><text x="127" y="459">8</text><text x="127" y="489">9</text>
+        </g>
+        <g stroke-linecap="round" stroke-width="9" fill="none">
+          <path d="M155 245h46" stroke="#ff7a45" />
+          <path d="M211 245h92" stroke="#ffcfb4" stroke-opacity=".8" />
+          <path d="M155 275h34" stroke="#ff7a45" />
+          <path d="M199 275h58" stroke="#ffcfb4" stroke-opacity=".55" />
+          <path d="M267 275h70" stroke="#e8392e" />
+          <path d="M185 305h118" stroke="#ffcfb4" stroke-opacity=".55" />
+          <path d="M313 305h46" stroke="#ff7a45" />
+          <path d="M185 335h60" stroke="#e8392e" />
+          <path d="M255 335h96" stroke="#ffcfb4" stroke-opacity=".8" />
+          <path d="M155 365h30" stroke="#ff7a45" />
+          <path d="M195 365h130" stroke="#ffcfb4" stroke-opacity=".4" />
+          <path d="M185 395h86" stroke="#ffcfb4" stroke-opacity=".8" />
+          <path d="M281 395h54" stroke="#ff7a45" />
+          <path d="M345 395h60" stroke="#ffcfb4" stroke-opacity=".4" />
+          <path d="M185 425h140" stroke="#ffcfb4" stroke-opacity=".5" />
+          <path d="M155 455h52" stroke="#e8392e" />
+          <path d="M217 455h90" stroke="#ffcfb4" stroke-opacity=".8" />
+          <path d="M185 485h72" stroke="#ff7a45" />
+        </g>
+        <rect class="cur" x="268" y="476" width="4" height="20" rx="2" fill="#fff1e8" />
+      </g>
+
+      <!-- forecast chart card -->
+      <g class="fl a">
+        <rect x="418" y="62" width="196" height="148" rx="22" fill="url(#glass)" stroke="#ffcfb4"
+          stroke-opacity=".28" />
+        <text x="438" y="90" font-family="Sora,system-ui,sans-serif" font-size="12" fill="#ffcfb4"
+          fill-opacity=".8">Sales forecast</text>
+        <g fill="url(#bar)">
+          <rect x="438" y="150" width="14" height="38" rx="3" />
+          <rect x="460" y="138" width="14" height="50" rx="3" />
+          <rect x="482" y="144" width="14" height="44" rx="3" />
+          <rect x="504" y="124" width="14" height="64" rx="3" />
+        </g>
+        <g fill="#ff7a45" fill-opacity=".85">
+          <rect x="526" y="112" width="14" height="76" rx="3" />
+          <rect x="548" y="100" width="14" height="88" rx="3" />
+          <rect x="570" y="108" width="14" height="80" rx="3" opacity=".6" />
+        </g>
+        <path d="M445 140L467 128 489 134 511 114 533 102 555 92 577 84" fill="none" stroke="url(#line)"
+          stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 0" />
+        <circle cx="577" cy="84" r="5" fill="#fff1e8" />
+      </g>
+
+      <!-- neural network card -->
+      <g class="fl b">
+        <g transform="translate(-8,-36)">
+          <rect x="22" y="92" width="170" height="148" rx="22" fill="url(#glass)" stroke="#ffcfb4"
+            stroke-opacity=".28" />
+          <g stroke="#ffcfb4" stroke-opacity=".3" stroke-width="1.2">
+            <path
+              d="M52 128L106 118M52 128L106 158M52 128L106 198M52 170L106 118M52 170L106 158M52 170L106 198M52 212L106 118M52 212L106 158M52 212L106 198" />
+            <path
+              d="M106 118L160 150M106 118L160 190M106 158L160 150M106 158L160 190M106 198L160 150M106 198L160 190" />
+          </g>
+          <g fill="#ffcfb4">
+            <circle cx="52" cy="128" r="7" />
+            <circle cx="52" cy="170" r="7" />
+            <circle cx="52" cy="212" r="7" />
+          </g>
+          <g fill="#ff7a45">
+            <circle cx="106" cy="118" r="8" />
+            <circle cx="106" cy="158" r="8" />
+            <circle cx="106" cy="198" r="8" />
+          </g>
+          <g fill="#fff1e8">
+            <circle cx="160" cy="150" r="9" />
+            <circle cx="160" cy="190" r="9" />
+          </g>
+        </g>
+      </g>
+
+      <!-- floating chips -->
+      <g class="fl c" font-family="Sora,system-ui,sans-serif" font-size="13" font-weight="600">
+        <rect x="520" y="246" width="104" height="36" rx="18" fill="#fff1e8" /><text x="572" y="269"
+          text-anchor="middle" fill="#7a0c12">Flask</text>
+      </g>
+      <g class="fl a" font-family="Sora,system-ui,sans-serif" font-size="13" font-weight="600">
+        <rect x="24" y="262" width="112" height="36" rx="18" fill="#ff7a45" /><text x="80" y="285" text-anchor="middle"
+          fill="#2a0a10">Python</text>
+      </g>
+    </svg>
+
+    <h1 class="name"><span>Darshan</span><span>Pawar</span></h1>
+  </header>
+
+  <section id="about">
+    <div class="wrap">
+      <h3 class="big rv">I make ideas into things people can <b>open and use.</b></h3>
+      <p class="lede rv">I like projects that solve a real problem. StudyShelf helps degree students find notes in one
+        place, and my forecasting dashboard turns plain sales files into charts and predictions. At iBase Electrosoft I
+        went deeper into AI and deep learning during my internship. I build, deploy, and keep improving.</p>
+      <div class="stats">
+        <div class="stat rv"><span class="num" data-to="2">0</span><span>Projects built and shared</span></div>
+        <div class="stat rv"><span class="num" data-to="1">0</span><span>Internship completed</span></div>
+        <div class="stat rv"><span class="num" data-to="15" data-suf="+">0</span><span>Tools and technologies</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <h3 class="big rv">Selected <b>work</b></h3>
+      <p class="lede rv">One full web app with a database and admin login, and one data app that forecasts sales from
+        any CSV.</p>
+      <div class="projects">
+
+        <article class="card rv">
+          <div class="glass">
+            <div class="gh"><span class="lab">Project 01</span></div>
+            <div class="shot">
+              <div class="win">
+                <div class="dots"><i></i><i></i><i></i></div>
+                <a class="frame" href="https://study-shelf-gamma.vercel.app" target="_blank" rel="noopener"
+                  aria-label="Open the StudyShelf website">
+                  <div class="mock" aria-hidden="true">
+                    <div class="tb"><b class="a"></b><b></b></div>
+                    <div class="bn"><b class="a" style="width:46%"></b><b style="width:30%;background:#8c3a44"></b><b
+                        style="width:68%"></b></div>
+                    <b style="width:42%"></b>
+                    <div class="row2"><u></u><u></u></div>
+                  </div>
+                </a>
+              </div>
             </div>
-          </a></div></div>
-        <div class="body">
-          <h4>StudyShelf</h4>
-          <p>A notes-sharing site for degree students. Filter by year and subject, search, and download PDF notes. Admins log in to add and manage notes.</p>
-          <div class="tags"><span>Python</span><span>Flask</span><span>Supabase</span><span>HTML/CSS/JS</span><span>Vercel</span></div>
-          <div class="links">
-            <a href="https://study-shelf-gamma.vercel.app" target="_blank" rel="noopener">Live site</a>
-            <a href="https://github.com/DarshanPawar-devp/Study-Shelf" target="_blank" rel="noopener">Source code</a>
+            <div class="body">
+              <h4>StudyShelf</h4>
+              <p>A notes-sharing site for degree students. Filter by year and subject, search, and download PDF notes.
+                Admins log in to add and manage notes.</p>
+              <div class="tags">
+                <span>Python</span><span>Flask</span><span>Supabase</span><span>HTML/CSS/JS</span><span>Vercel</span>
+              </div>
+              <div class="links">
+                <a href="https://study-shelf-gamma.vercel.app" target="_blank" rel="noopener">Live site</a>
+                <a href="https://github.com/DarshanPawar-devp/Study-Shelf" target="_blank" rel="noopener">Source
+                  code</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card rv">
+          <div class="glass">
+            <div class="gh"><span class="lab">Project 02</span></div>
+            <div class="shot" aria-hidden="true">
+              <div class="win">
+                <div class="dots"><i></i><i></i><i></i></div>
+                <div class="bars"><s style="height:34%"></s><s style="height:46%"></s><s style="height:40%"></s><s
+                    style="height:60%"></s><s style="height:68%"></s><s class="f" style="height:78%"></s><s class="f"
+                    style="height:90%"></s></div>
+              </div>
+            </div>
+            <div class="body">
+              <h4>AI Sales Forecasting Dashboard</h4>
+              <p>Upload a sales CSV, map your columns, and get charts and a forecast of future sales. Built to work with
+                different kinds of sales data.</p>
+              <div class="tags">
+                <span>Python</span><span>Pandas</span><span>scikit-learn</span><span>Plotly</span><span>Streamlit</span>
+              </div>
+              <div class="links">
+                <a href="https://ai-sales-forecasting-dashboard.streamlit.app/" target="_blank" rel="noopener">Live
+                  app</a>
+                <a href="https://github.com/DarshanPawar-devp" target="_blank" rel="noopener">Source code</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="journey">
+    <div class="wrap">
+      <h3 class="big rv">My <b>journey</b></h3>
+      <p class="lede rv">Where I've worked and studied.</p>
+      <div class="tl">
+
+        <article class="item rv">
+          <div class="glass">
+            <span class="when">25 May 2026 to 25 June 2026</span>
+            <h4>AI and Deep Learning Intern</h4>
+            <div class="org">iBase Electrosoft LLP</div>
+            <ul>
+              <li>Completed project work in AI and deep learning, building and training neural networks (ANN, CNN, RNN
+                and LSTM) with TensorFlow and Keras.</li>
+              <li>Worked on data preprocessing, model training and optimization, image classification, object detection
+                and natural language processing.</li>
+              <li>Recognised in the certificate for analytical thinking, technical proficiency and problem-solving, and
+                for completing all assigned project responsibilities.</li>
+            </ul>
+            <a class="cert" href="internship-certificate.pdf" target="_blank" rel="noopener">View certificate</a>
+          </div>
+        </article>
+
+        <article class="item rv">
+          <div class="glass">
+            <span class="when">October 2024 to Present</span>
+            <h4>Bachelor of Computer Applications (BCA)</h4>
+            <div class="org">R. C. Patel Educational Trust's Institute of Management and Research Development</div>
+            <ul>
+              <li>Completed an AI and deep learning internship at iBase Electrosoft LLP in 2026.</li>
+              <li>Built StudyShelf and the AI Sales Forecasting Dashboard as personal projects.</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <h3 class="big rv">What I <b>work with</b></h3>
+      <p class="lede rv">The tools I use to build and ship projects.</p>
+      <div class="skills">
+        <div class="skill rv">
+          <h4>Web</h4>
+          <div><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Flask</span><span>Supabase</span></div>
+        </div>
+        <div class="skill rv">
+          <h4>Data</h4>
+          <div>
+            <span>Python</span><span>Pandas</span><span>scikit-learn</span><span>Plotly</span><span>Streamlit</span><span>SQL</span>
           </div>
         </div>
-      </article>
-
-      <article class="card rv">
-        <div class="shot" aria-hidden="true"><div class="win"><div class="dots"><i></i><i></i><i></i></div>
-          <div class="bars"><s style="height:34%"></s><s style="height:46%"></s><s style="height:40%"></s><s style="height:60%"></s><s style="height:68%"></s><s class="f" style="height:78%"></s><s class="f" style="height:90%"></s></div></div></div>
-        <div class="body">
-          <h4>AI Sales Forecasting Dashboard</h4>
-          <p>Upload a sales CSV, map your columns, and get charts and a forecast of future sales. Built to work with different kinds of sales data.</p>
-          <div class="tags"><span>Python</span><span>Pandas</span><span>scikit-learn</span><span>Plotly</span><span>Streamlit</span></div>
-          <div class="links">
-            <a href="https://ai-sales-forecasting-dashboard.streamlit.app/" target="_blank" rel="noopener">Live app</a>
-            <a href="https://github.com/DarshanPawar-devp" target="_blank" rel="noopener">Source code</a>
-          </div>
+        <div class="skill rv">
+          <h4>AI and ML</h4>
+          <div><span>TensorFlow</span><span>Keras</span><span>ANN</span><span>CNN</span><span>RNN and
+              LSTM</span><span>NLP</span><span>Image classification</span><span>Object detection</span></div>
         </div>
-      </article>
-
+        <div class="skill rv">
+          <h4>Tools</h4>
+          <div><span>Git</span><span>GitHub</span><span>Vercel</span><span>VS Code</span></div>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="journey">
-  <div class="wrap">
-    <h3 class="big rv">My <b>journey</b></h3>
-    <p class="lede rv">Where I've worked and studied.</p>
-    <div class="tl">
-
-      <article class="item rv">
-        <span class="when">25 May 2026 to 25 June 2026</span>
-        <h4>AI and Deep Learning Intern</h4>
-        <div class="org">iBase Electrosoft LLP</div>
-        <ul>
-          <li>Completed project work in AI and deep learning, building and training neural networks (ANN, CNN, RNN and LSTM) with TensorFlow and Keras.</li>
-          <li>Worked on data preprocessing, model training and optimization, image classification, object detection and natural language processing.</li>
-          <li>Recognised in the certificate for analytical thinking, technical proficiency and problem-solving, and for completing all assigned project responsibilities.</li>
-        </ul>
-        <a class="cert" href="internship-certificate.pdf" target="_blank" rel="noopener">View certificate</a>
-      </article>
-
-      <article class="item rv">
-        <span class="when">October 2024 to Present</span>
-        <h4>Bachelor of Computer Applications (BCA)</h4>
-        <div class="org">R. C. Patel Educational Trust's Institute of Management and Research Development</div>
-        <ul>
-          <li>Completed an AI and deep learning internship at iBase Electrosoft LLP in 2026.</li>
-          <li>Built StudyShelf and the AI Sales Forecasting Dashboard as personal projects.</li>
-        </ul>
-      </article>
-
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h3 class="big rv">Let's build something <b>together.</b></h3>
+      <a class="mail rv" href="mailto:Darshanpawar2417@gmail.com">Darshanpawar2417@gmail.com</a>
+      <div class="social">
+        <a href="resume.pdf" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"
+            focusable="false">
+            <g class="st">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <path d="M14 2v6h6" />
+              <path d="M12 11v6" />
+              <path d="m9 14.5 3 3 3-3" />
+            </g>
+          </svg>Resume</a>
+        <a href="https://github.com/DarshanPawar-devp" target="_blank" rel="noopener"><svg class="ic"
+            viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path
+              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+          </svg>GitHub</a>
+        <a href="https://www.linkedin.com/in/darshan-pawar-363b9a347" target="_blank" rel="noopener"><svg class="ic"
+            viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zM7.119 20.452H3.555V9h3.564v11.452z" />
+          </svg>LinkedIn</a>
+        <a href="https://www.instagram.com/darsshann24" target="_blank" rel="noopener"><svg class="ic"
+            viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <g class="st">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+                transform="translate(1.2 1.2) scale(.9)" />
+              <circle cx="12" cy="13" r="3.6" />
+            </g>
+          </svg>Instagram</a>
+        <a href="mailto:Darshanpawar2417@gmail.com"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"
+            focusable="false">
+            <g class="st">
+              <rect x="2" y="4" width="20" height="16" rx="2.5" />
+              <path d="m22 7.5-10 6.5L2 7.5" />
+            </g>
+          </svg>Email</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="skills">
-  <div class="wrap">
-    <h3 class="big rv">What I <b>work with</b></h3>
-    <p class="lede rv">The tools I use to build and ship projects.</p>
-    <div class="skills">
-      <div class="skill rv"><h4>Web</h4><div><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Flask</span><span>Supabase</span></div></div>
-      <div class="skill rv"><h4>Data</h4><div><span>Python</span><span>Pandas</span><span>scikit-learn</span><span>Plotly</span><span>Streamlit</span><span>SQL</span></div></div>
-      <div class="skill rv"><h4>AI and ML</h4><div><span>TensorFlow</span><span>Keras</span><span>ANN</span><span>CNN</span><span>RNN and LSTM</span><span>NLP</span><span>Image classification</span><span>Object detection</span></div></div>
-      <div class="skill rv"><h4>Tools</h4><div><span>Git</span><span>GitHub</span><span>Vercel</span><span>VS Code</span></div></div>
+  <footer>
+    <div class="wrap">&copy; <span id="yr">2026</span> Darshan Pawar</div>
+  </footer>
+
+  <dialog class="dlg" id="workDlg" aria-labelledby="workTitle">
+    <div class="dlg-in">
+      <button class="dlg-x" type="button" id="workX" aria-label="Close">&times;</button>
+      <h3 id="workTitle">Open to work</h3>
+      <p>I'm looking for internships and entry-level roles in web development, data and AI. Email is the quickest way to
+        reach me.</p>
+      <div class="dlg-btns">
+        <a class="btn p" href="mailto:Darshanpawar2417@gmail.com">Email me</a>
+        <a class="btn g" href="https://www.linkedin.com/in/darshan-pawar-363b9a347" target="_blank"
+          rel="noopener">LinkedIn</a>
+        <a class="btn g" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </div>
     </div>
-  </div>
-</section>
+  </dialog>
 
-<section class="contact" id="contact">
-  <div class="wrap">
-    <h3 class="big rv">Let's build something <b>together.</b></h3>
-    <a class="mail rv" href="mailto:Darshanpawar2417@gmail.com">Darshanpawar2417@gmail.com</a>
-    <div class="social">
-      <a href="resume.pdf" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g class="st"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 11v6"/><path d="m9 14.5 3 3 3-3"/></g></svg>Resume</a>
-      <a href="https://github.com/DarshanPawar-devp" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>GitHub</a>
-      <a href="https://www.linkedin.com/in/darshan-pawar-363b9a347" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zM7.119 20.452H3.555V9h3.564v11.452z"/></svg>LinkedIn</a>
-      <a href="https://www.instagram.com/darsshann24" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g class="st"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" transform="translate(1.2 1.2) scale(.9)"/><circle cx="12" cy="13" r="3.6"/></g></svg>Instagram</a>
-      <a href="mailto:Darshanpawar2417@gmail.com"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g class="st"><rect x="2" y="4" width="20" height="16" rx="2.5"/><path d="m22 7.5-10 6.5L2 7.5"/></g></svg>Email</a>
-    </div>
-  </div>
-</section>
+  <script>
+    (function () {
+      var d = document.getElementById('workDlg'), b = document.getElementById('workBtn');
+      b.addEventListener('click', function () { if (d.showModal) d.showModal(); else d.setAttribute('open', ''); });
+      document.getElementById('workX').addEventListener('click', function () { d.close(); });
+      d.addEventListener('click', function (e) { if (e.target === d) d.close(); });
+    })();
+  </script>
+  <script>
+    (function () {
+      var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      function $(q) { return Array.prototype.slice.call(document.querySelectorAll(q)); }
+      document.getElementById('yr').textContent = new Date().getFullYear();
+      function fit() { $('.frame iframe').forEach(function (f) { f.style.transform = 'scale(' + (f.parentNode.clientWidth / 1280) + ')'; }); }
+      fit(); addEventListener('resize', fit);
 
-<footer><div class="wrap">&copy; <span id="yr">2026</span> Darshan Pawar</div></footer>
+      var bar = document.getElementById('bar'), ids = ['about', 'work', 'journey', 'skills', 'contact'],
+        secs = ids.map(function (i) { return document.getElementById(i); }), navs = $('.pills a,.side a');
+      function onScroll() {
+        var y = window.scrollY, h = document.documentElement.scrollHeight - innerHeight;
+        bar.style.transform = 'scaleX(' + (h > 0 ? y / h : 0) + ')';
+        var cur = ''; secs.forEach(function (s, i) { if (s.getBoundingClientRect().top < innerHeight * 0.4) cur = ids[i]; });
+        navs.forEach(function (a) { a.classList.toggle('on', a.getAttribute('href') === '#' + cur); });
+      }
+      addEventListener('scroll', onScroll, { passive: true }); onScroll();
 
-<dialog class="dlg" id="workDlg" aria-labelledby="workTitle">
-  <div class="dlg-in">
-    <button class="dlg-x" type="button" id="workX" aria-label="Close">&times;</button>
-    <h3 id="workTitle">Open to work</h3>
-    <p>I'm looking for internships and entry-level roles in web development, data and AI. Email is the quickest way to reach me.</p>
-    <div class="dlg-btns">
-      <a class="btn p" href="mailto:Darshanpawar2417@gmail.com">Email me</a>
-      <a class="btn g" href="https://www.linkedin.com/in/darshan-pawar-363b9a347" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn g" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
-    </div>
-  </div>
-</dialog>
+      function count(el) {
+        var to = +el.dataset.to, suf = el.dataset.suf || '', t0 = performance.now();
+        (function step(t) {
+          var p = Math.min((t - t0) / 1300, 1); el.textContent = Math.round(to * (1 - Math.pow(1 - p, 3))) + (p === 1 ? suf : '');
+          if (p < 1) requestAnimationFrame(step);
+        })(t0);
+      }
+      if (reduce) { $('.num').forEach(function (n) { n.textContent = n.dataset.to + (n.dataset.suf || ''); }); $('.rv').forEach(function (e) { e.classList.remove('rv'); }); return; }
 
-<script>
-(function(){
-  var d=document.getElementById('workDlg'),b=document.getElementById('workBtn');
-  b.addEventListener('click',function(){if(d.showModal)d.showModal();else d.setAttribute('open','');});
-  document.getElementById('workX').addEventListener('click',function(){d.close();});
-  d.addEventListener('click',function(e){if(e.target===d)d.close();});
-})();
-</script>
-<script>
-(function(){
-  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  function $(q){return Array.prototype.slice.call(document.querySelectorAll(q));}
-  document.getElementById('yr').textContent=new Date().getFullYear();
-  function fit(){$('.frame iframe').forEach(function(f){f.style.transform='scale('+(f.parentNode.clientWidth/1280)+')';});}
-  fit();addEventListener('resize',fit);
+      var io = new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (!e.isIntersecting) return; var t = e.target; io.unobserve(t); t.classList.add('in');
+          if (t.classList.contains('card')) t.classList.add('grow');
+          var n = t.querySelector('.num'); if (n) count(n);
+          setTimeout(function () { t.classList.remove('rv', 'in'); }, 1600);
+        });
+      }, { threshold: .15 });
+      $('.rv').forEach(function (el) {
+        var sib = Array.prototype.indexOf.call(el.parentNode.children, el);
+        el.style.setProperty('--d', (sib % 4) * 90 + 'ms'); io.observe(el);
+      });
+      $('.bars s').forEach(function (b, i) { b.style.transitionDelay = (i * 90) + 'ms'; });
 
-  var bar=document.getElementById('bar'),ids=['about','work','journey','skills','contact'],
-      secs=ids.map(function(i){return document.getElementById(i);}),navs=$('.pills a,.side a');
-  function onScroll(){
-    var y=window.scrollY,h=document.documentElement.scrollHeight-innerHeight;
-    bar.style.transform='scaleX('+(h>0?y/h:0)+')';
-    var cur='';secs.forEach(function(s,i){if(s.getBoundingClientRect().top<innerHeight*0.4)cur=ids[i];});
-    navs.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+cur);});
-  }
-  addEventListener('scroll',onScroll,{passive:true});onScroll();
+      var rot = document.getElementById('rot'), words = ['web apps', 'data tools', 'dashboards', 'useful projects'], wi = 0, ci = words[0].length, dir = -1;
+      function tick() {
+        var w = words[wi], t = dir > 0 ? 85 : 45; rot.textContent = w.slice(0, ci);
+        if (dir > 0 && ci === w.length) { dir = -1; t = 1700; }
+        else if (dir < 0 && ci === 0) { dir = 1; wi = (wi + 1) % words.length; t = 250; }
+        else ci += dir;
+        setTimeout(tick, t);
+      }
+      setTimeout(tick, 2200);
 
-  function count(el){
-    var to=+el.dataset.to,suf=el.dataset.suf||'',t0=performance.now();
-    (function step(t){var p=Math.min((t-t0)/1300,1);el.textContent=Math.round(to*(1-Math.pow(1-p,3)))+(p===1?suf:'');
-      if(p<1)requestAnimationFrame(step);})(t0);
-  }
-  if(reduce){$('.num').forEach(function(n){n.textContent=n.dataset.to+(n.dataset.suf||'');});$('.rv').forEach(function(e){e.classList.remove('rv');});return;}
+      var glow = document.getElementById('glow'), root = document.documentElement.style;
+      addEventListener('pointermove', function (e) {
+        glow.style.transform = 'translate3d(' + (e.clientX - 240) + 'px,' + (e.clientY - 240) + 'px,0)';
+        root.setProperty('--cx', e.clientX + 'px'); root.setProperty('--cy', e.clientY + 'px');
+      }, { passive: true });
 
-  var io=new IntersectionObserver(function(es){es.forEach(function(e){
-    if(!e.isIntersecting)return;var t=e.target;io.unobserve(t);t.classList.add('in');
-    if(t.classList.contains('card'))t.classList.add('grow');
-    var n=t.querySelector('.num');if(n)count(n);
-    setTimeout(function(){t.classList.remove('rv','in');},1600);
-  });},{threshold:.15});
-  $('.rv').forEach(function(el){
-    var sib=Array.prototype.indexOf.call(el.parentNode.children,el);
-    el.style.setProperty('--d',(sib%4)*90+'ms');io.observe(el);
-  });
-  $('.bars s').forEach(function(b,i){b.style.transitionDelay=(i*90)+'ms';});
-
-  var rot=document.getElementById('rot'),words=['web apps','data tools','dashboards','useful projects'],wi=0,ci=words[0].length,dir=-1;
-  function tick(){
-    var w=words[wi],t=dir>0?85:45;rot.textContent=w.slice(0,ci);
-    if(dir>0&&ci===w.length){dir=-1;t=1700;}
-    else if(dir<0&&ci===0){dir=1;wi=(wi+1)%words.length;t=250;}
-    else ci+=dir;
-    setTimeout(tick,t);
-  }
-  setTimeout(tick,2200);
-
-  var glow=document.getElementById('glow'),root=document.documentElement.style;
-  addEventListener('pointermove',function(e){
-    glow.style.transform='translate3d('+(e.clientX-240)+'px,'+(e.clientY-240)+'px,0)';
-    root.setProperty('--cx',e.clientX+'px');root.setProperty('--cy',e.clientY+'px');
-  },{passive:true});
-
-  var art=document.getElementById('art');
-  document.querySelector('.hero').addEventListener('pointermove',function(e){
-    if(e.pointerType!=='mouse')return;
-    art.style.animation='none';
-    art.style.transform='translate('+((e.clientX/innerWidth-.5)*-18)+'px,'+((e.clientY/innerHeight-.5)*-10)+'px)';
-  });
-})();
-</script>
+      var art = document.getElementById('art');
+      document.querySelector('.hero').addEventListener('pointermove', function (e) {
+        if (e.pointerType !== 'mouse') return;
+        art.style.animation = 'none';
+        art.style.transform = 'translate(' + ((e.clientX / innerWidth - .5) * -18) + 'px,' + ((e.clientY / innerHeight - .5) * -10) + 'px)';
+      });
+    })();
+  </script>
 </body>
+
 </html>
