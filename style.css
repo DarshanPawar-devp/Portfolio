@@ -2973,3 +2973,17 @@ html {
     contain: strict;
   }
 }
+
+
+/* ===== mobile menu panel: same glass recipe as the project / timeline cards ===== */
+@media (max-width: 880px) {
+  .links-nav {
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, .12), rgba(255, 255, 255, 0) 42%),
+      linear-gradient(135deg, var(--glass), color-mix(in srgb, var(--glass) 40%, transparent));
+    -webkit-backdrop-filter: blur(20px) saturate(1.5);
+    backdrop-filter: blur(20px) saturate(1.5);
+    border: 1px solid var(--glass-edge);
+    box-shadow: var(--glass-shadow), inset 0 1px 0 var(--glass-edge), inset 0 -1px 0 rgba(255, 255, 255, .05);
+  }
+}
