@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="1050" viewBox="0 0 840 1050" role="img" aria-label="Darshan Pawar developer identity card, dark theme">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#22201d"/><stop offset="1" stop-color="#121110"/></linearGradient>
+    <radialGradient id="glow" cx="70%" cy="28%" r="70%"><stop stop-color="#8294c0" stop-opacity=".36"/><stop offset="1" stop-color="#8294c0" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="840" height="1050" rx="54" fill="url(#bg)"/>
+  <rect x="28" y="28" width="784" height="994" rx="34" fill="none" stroke="#f4f0e6" stroke-opacity=".18"/>
+  <rect width="840" height="1050" rx="54" fill="url(#glow)"/>
+  <g fill="none" stroke="#aab8d6" stroke-opacity=".16"><path d="M-20 190H860M-20 730H860M154 0V1050M686 0V1050"/><circle cx="656" cy="271" r="176"/><circle cx="656" cy="271" r="244"/></g>
+  <text x="76" y="116" fill="#f4f0e6" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" letter-spacing="4">DP / 2026</text>
+  <text x="76" y="315" fill="#8294c0" font-family="Arial, Helvetica, sans-serif" font-size="250" font-weight="800" letter-spacing="-18">DP</text>
+  <text x="76" y="452" fill="#f4f0e6" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" letter-spacing="3">BUILD · LEARN · CREATE</text>
+  <text x="76" y="505" fill="#b3aea2" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="2">A QUIET IDENTITY MARK</text>
+  <g fill="none" stroke="#8294c0" stroke-width="2" stroke-linecap="round"><path d="M76 622H388M76 674H286M76 726H446"/><circle cx="410" cy="622" r="7" fill="#8294c0"/><circle cx="308" cy="674" r="7" fill="#8294c0"/><circle cx="468" cy="726" r="7" fill="#8294c0"/></g>
+  <path d="M76 830H764" stroke="#f4f0e6" stroke-opacity=".2"/>
+  <circle cx="88" cy="905" r="7" fill="#8294c0"/><text x="110" y="912" fill="#f4f0e6" font-family="Arial, Helvetica, sans-serif" font-size="21">DIGITAL NOTES / 01</text>
+  <text x="76" y="971" fill="#b3aea2" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="3">PERSONAL ARCHIVE</text>
+</svg>

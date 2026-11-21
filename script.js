@@ -108,7 +108,7 @@
 
     // scroll-linked effects
     var navLock = 0;
-    var ids = ['home', 'about', 'work', 'journey', 'skills', 'resume', 'contact'], secs = ids.map(function (i) { return document.getElementById(i); }),
+    var ids = ['home', 'about', 'work', 'journey', 'skills', 'contact'], secs = ids.map(function (i) { return document.getElementById(i); }),
         links = $('#nav a'), header = document.getElementById('top'), ghost = document.getElementById('ghost'),
         prog = document.getElementById('progress'), grid = document.querySelector('.hero-grid'),
         tl = document.querySelector('.tl'), tlis = $('.tl > li'), wins = $('.win'),
