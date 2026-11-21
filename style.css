@@ -2884,3 +2884,92 @@ body {
     inset 0 -1px 0 rgba(255, 255, 255, .05),
     0 18px 50px rgba(0, 0, 0, .5);
 }
+
+
+/* ===== PHONE FIXES (nothing removed: same look and animations, just cheaper to draw) ===== */
+
+/* page can never be wider than the screen (this pushed the header buttons off the right edge) */
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+.top {
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 100vw;
+}
+
+.bar {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* "hello" sat at 50% of a very tall phone hero, far below the screen: pin it behind the name.
+   Change --hello-top to move it up or down. */
+@media (max-width: 880px) {
+  .hero {
+    --hello-top: clamp(150px, 40vw, 260px);
+  }
+
+  .hero .ghost {
+    top: var(--hello-top);
+    margin-top: 0;
+    left: -3vw;
+    font-size: clamp(170px, 52vw, 300px);
+  }
+
+  /* the browser skips painting sections that are off screen, so far fewer blurred cards and animations are drawn at once */
+  section:not(.hero) {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 900px;
+  }
+}
+
+@media (max-width: 880px), (hover: none) {
+
+  /* grain: same texture and strength, without the blend mode that forces the whole screen to be re-composited every frame */
+  .grain {
+    mix-blend-mode: normal;
+    opacity: calc(.045 * var(--fx));
+    will-change: auto;
+  }
+
+  :root[data-theme="dark"] .grain {
+    mix-blend-mode: normal;
+    opacity: calc(.035 * var(--fx));
+  }
+
+  /* glass keeps its blur, with a smaller radius (blur cost grows fast with the radius) */
+  .logo,
+  .links-nav,
+  .hire,
+  .icon-btn,
+  .hero .btn.line {
+    -webkit-backdrop-filter: blur(10px) saturate(150%);
+    backdrop-filter: blur(10px) saturate(150%);
+  }
+
+  .proj,
+  .tl>li.rv,
+  .ecard {
+    -webkit-backdrop-filter: blur(9px) saturate(1.3);
+    backdrop-filter: blur(9px) saturate(1.3);
+  }
+
+  /* each animated background layer gets its own GPU layer so scrolling doesn't repaint it */
+  .pool,
+  .orb,
+  .sc,
+  .sc-rot,
+  .stage,
+  .par {
+    will-change: transform;
+    backface-visibility: hidden;
+  }
+
+  .bgfx {
+    contain: strict;
+  }
+}

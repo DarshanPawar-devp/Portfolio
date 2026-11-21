@@ -220,10 +220,14 @@
     var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
     var fine = matchMedia('(hover: hover) and (pointer: fine)').matches;
     var ticking = false;
+    var stage = fx.querySelector('.stage');
 
     function onScroll() {
         var p = Math.min(Math.max(window.scrollY / (innerHeight * .9), 0), 1);
-        fx.style.setProperty('--sf', p.toFixed(3));
+        // set the fade directly on the stage (same result as the --sf variable, but without
+        // re-styling every background layer on every scroll frame)
+        if (stage) { stage.style.opacity = (1 - p * .62).toFixed(3); stage.style.translate = '0 ' + (p * -36).toFixed(1) + 'px'; }
+        else fx.style.setProperty('--sf', p.toFixed(3));
         ticking = false;
     }
     addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
